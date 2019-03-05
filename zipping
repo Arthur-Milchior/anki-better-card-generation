@@ -1,0 +1,2 @@
+rm quickerRender.zip
+zip -R quickerRender.zip *py README.md LICENSE config* zipping ankiweb  --exclude \*~
