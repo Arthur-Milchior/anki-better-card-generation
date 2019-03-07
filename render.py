@@ -2,7 +2,7 @@ from anki.template.template import Template, get_or_attr, modifiers
 from anki.utils import stripHTMLMedia
 import re
 
-def sub_section(self, match):
+def sub_section(self, match, context):
     section, section_name, inner = match.group(0, 1, 2)
     section_name = section_name.strip()
 
@@ -34,7 +34,7 @@ def render_sections(self, template, context):
     their normal value."""
     n = 1
     while n:
-        template, n = self.section_re.subn(self.sub_section, template)
+        template, n = self.section_re.subn(lambda match:self.sub_section(match,context), template)
     return template
 
 Template.render_sections = render_sections

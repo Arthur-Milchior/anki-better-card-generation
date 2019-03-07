@@ -34,7 +34,7 @@ A template such as
 is theoretically invalid. Indeed, you should cloze Back before Front
 since you opened it after Front. If you create a note with some value
 in Back and no value in Front, you'll see the message "{unknown field
-/Back}" (which is a really badly wrnitten error message). However,
+/Back}" (which is a really badly written error message). However,
 anki will still generate some content when you use this model. It is possible that the content
 generated with and without this add-on will differ.
 
@@ -47,3 +47,13 @@ version.
 It also creates the methods:
 * anki.template.template.Template.sub_section
 * anki.template.template.Template.sub_tag
+
+## Links, licence and credits
+
+Key         |Value
+------------|-------------------------------------------------------------------
+Copyright   | Arthur Milchior <arthur@milchior.fr>
+Based on    | Anki code by Damien Elmes <anki@ichi2.net>
+License     | GNU AGPL, version 3 or later; http://www.gnu.org/licenses/agpl.html
+Source in   | https://github.com/Arthur-Milchior/anki-better-card-generation
+Addon number| [115825506](https://ankiweb.net/shared/info/115825506)
