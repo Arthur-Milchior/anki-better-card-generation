@@ -28,7 +28,7 @@ actually not an important limit anymore.
 
 ### Badly formed card type
 A template such as
-```
+```python
 {{#Front}}{{#Back}} {{Front}}{{Back}}{{/Front}} {{/Back}}
 ```
 is theoretically invalid. Indeed, you should cloze Back before Front
