@@ -1,6 +1,8 @@
+import re
+
 from anki.template.template import Template, get_or_attr, modifiers
 from anki.utils import stripHTMLMedia
-import re
+
 
 def sub_section(self, match, context):
     section, section_name, inner = match.group(0, 1, 2)

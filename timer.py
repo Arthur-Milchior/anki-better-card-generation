@@ -1,12 +1,14 @@
 # from anki.template.template import Template
+import re
 import time
+
 import anki
+from anki.collection import _Collection
+from anki.consts import *
+from anki.hooks import runFilter
 from anki.models import ModelManager
 from anki.sound import stripSounds
 from anki.utils import splitFields
-from anki.consts import *
-import re
-from anki.hooks import  runFilter
 
 # oldRender = Template.render
 # def render(*args,**kwargs):
@@ -19,7 +21,6 @@ from anki.hooks import  runFilter
 
 # Template.render = render
 
-from anki.collection import _Collection
 
 old_updateRequired = ModelManager._updateRequired
 def _updateRequired(*args,**kwargs):
