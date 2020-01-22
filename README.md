@@ -48,6 +48,14 @@ It also creates the methods:
 * anki.template.template.Template.sub_section
 * anki.template.template.Template.sub_tag
 
+## Anki > 2.1.20
+Anki changed a lot in version 2.1.20. I am currently unable to
+understand those change, as they are in rust, and I don't know
+it. Furthermore, rules for card generation change, so it's possible
+that this add-on becomes useless. Anyway, until I know more about
+2.1.20, this add-on won't be available with latest anki. As this
+add-on as only peen downloaded 63 times, I believe that's not a real trouble.
+
 ## Links, licence and credits
 
 Key         |Value
